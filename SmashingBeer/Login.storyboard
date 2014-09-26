@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="14A361c" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="LpF-Di-pOB">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--LoginVC-->
+        <scene sceneID="PcX-AR-aBl">
+            <objects>
+                <viewController id="LpF-Di-pOB" customClass="SBLoginVC" customModule="SmashingBeer" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aZH-Rm-RHd"/>
+                        <viewControllerLayoutGuide type="bottom" id="B9N-pD-7dd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="R1O-oP-h94">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HM3-sc-pcc">
+                                <rect key="frame" x="16" y="84" width="568" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vFH-99-uvy">
+                                <rect key="frame" x="16" y="122" width="568" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hf2-ir-1Fh">
+                                <rect key="frame" x="277" y="197" width="38" height="30"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="loginButtonTapped:" destination="LpF-Di-pOB" eventType="touchUpInside" id="13k-c8-mTM"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="vFH-99-uvy" firstAttribute="leading" secondItem="R1O-oP-h94" secondAttribute="leadingMargin" id="4NN-dt-vTk"/>
+                            <constraint firstItem="vFH-99-uvy" firstAttribute="top" secondItem="HM3-sc-pcc" secondAttribute="bottom" constant="8" id="Tiw-eQ-kzC"/>
+                            <constraint firstItem="vFH-99-uvy" firstAttribute="trailing" secondItem="R1O-oP-h94" secondAttribute="trailingMargin" id="ZeF-jD-ehT"/>
+                            <constraint firstItem="HM3-sc-pcc" firstAttribute="trailing" secondItem="R1O-oP-h94" secondAttribute="trailingMargin" id="m4W-CV-emF"/>
+                            <constraint firstItem="HM3-sc-pcc" firstAttribute="leading" secondItem="R1O-oP-h94" secondAttribute="leadingMargin" id="qX8-nc-k1z"/>
+                            <constraint firstItem="HM3-sc-pcc" firstAttribute="top" secondItem="aZH-Rm-RHd" secondAttribute="bottom" constant="64" id="uvH-3X-1kK"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="emailAddressTF" destination="HM3-sc-pcc" id="MhA-A9-1Bw"/>
+                        <outlet property="loginButtonTapped" destination="hf2-ir-1Fh" id="0cg-sC-2de"/>
+                        <outlet property="passwordTF" destination="vFH-99-uvy" id="ubH-B4-kBp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GK9-TB-mzD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="403" y="330"/>
+        </scene>
+    </scenes>
+</document>

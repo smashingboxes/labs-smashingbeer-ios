@@ -1,0 +1,541 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		321966AED14E4C1793D94688 /* libPods-SmashingBeer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FC3F35165037430BAEBBF054 /* libPods-SmashingBeer.a */; };
+		94874ADF19D5ADF800D866F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94874ADE19D5ADF800D866F9 /* AppDelegate.swift */; };
+		94874AE619D5ADF800D866F9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94874AE519D5ADF800D866F9 /* Images.xcassets */; };
+		94874AE919D5ADF800D866F9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94874AE719D5ADF800D866F9 /* LaunchScreen.xib */; };
+		94874AF519D5ADF800D866F9 /* SmashingBeerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94874AF419D5ADF800D866F9 /* SmashingBeerTests.swift */; };
+		94A3E14619D5B04400EA190F /* BeerList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94A3E14519D5B04400EA190F /* BeerList.storyboard */; };
+		94A3E14F19D5B30B00EA190F /* SBLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A3E14E19D5B30B00EA190F /* SBLoginVC.swift */; };
+		94A3E15119D5B32000EA190F /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94A3E15019D5B32000EA190F /* Login.storyboard */; };
+		94A3E15319D5B35B00EA190F /* SBBeerListTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A3E15219D5B35B00EA190F /* SBBeerListTVC.swift */; };
+		94A3E15619D5B82400EA190F /* SBBeer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A3E15519D5B82400EA190F /* SBBeer.swift */; };
+		94A3E15819D5B83100EA190F /* SBUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A3E15719D5B83100EA190F /* SBUser.swift */; };
+		94A3E15F19D5BC5900EA190F /* SBWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A3E15E19D5BC5900EA190F /* SBWebService.swift */; };
+		94A3E16319D5D86900EA190F /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A3E16219D5D86900EA190F /* Alamofire.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		94874AEF19D5ADF800D866F9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 94874AD119D5ADF800D866F9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 94874AD819D5ADF800D866F9;
+			remoteInfo = SmashingBeer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		94874AD919D5ADF800D866F9 /* SmashingBeer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmashingBeer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		94874ADD19D5ADF800D866F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94874ADE19D5ADF800D866F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		94874AE519D5ADF800D866F9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		94874AE819D5ADF800D866F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		94874AEE19D5ADF800D866F9 /* SmashingBeerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmashingBeerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		94874AF319D5ADF800D866F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94874AF419D5ADF800D866F9 /* SmashingBeerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmashingBeerTests.swift; sourceTree = "<group>"; };
+		94A3E14519D5B04400EA190F /* BeerList.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = BeerList.storyboard; sourceTree = "<group>"; };
+		94A3E14E19D5B30B00EA190F /* SBLoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SBLoginVC.swift; sourceTree = "<group>"; };
+		94A3E15019D5B32000EA190F /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		94A3E15219D5B35B00EA190F /* SBBeerListTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SBBeerListTVC.swift; sourceTree = "<group>"; };
+		94A3E15519D5B82400EA190F /* SBBeer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SBBeer.swift; sourceTree = "<group>"; };
+		94A3E15719D5B83100EA190F /* SBUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SBUser.swift; sourceTree = "<group>"; };
+		94A3E15919D5B91C00EA190F /* SmashingBeer-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SmashingBeer-Bridging-Header.h"; sourceTree = "<group>"; };
+		94A3E15E19D5BC5900EA190F /* SBWebService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SBWebService.swift; sourceTree = "<group>"; };
+		94A3E16219D5D86900EA190F /* Alamofire.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alamofire.swift; sourceTree = "<group>"; };
+		B78E2B219CDD4AFB8B9CD1EF /* Pods-SmashingBeer.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmashingBeer.xcconfig"; path = "Pods/Pods-SmashingBeer.xcconfig"; sourceTree = "<group>"; };
+		FC3F35165037430BAEBBF054 /* libPods-SmashingBeer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SmashingBeer.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		94874AD619D5ADF800D866F9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				321966AED14E4C1793D94688 /* libPods-SmashingBeer.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94874AEB19D5ADF800D866F9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		94874AD019D5ADF800D866F9 = {
+			isa = PBXGroup;
+			children = (
+				94874ADB19D5ADF800D866F9 /* SmashingBeer */,
+				94874AF119D5ADF800D866F9 /* SmashingBeerTests */,
+				94874ADA19D5ADF800D866F9 /* Products */,
+				B78E2B219CDD4AFB8B9CD1EF /* Pods-SmashingBeer.xcconfig */,
+				DF1C4F5E068F460D84CBB7E8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		94874ADA19D5ADF800D866F9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				94874AD919D5ADF800D866F9 /* SmashingBeer.app */,
+				94874AEE19D5ADF800D866F9 /* SmashingBeerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		94874ADB19D5ADF800D866F9 /* SmashingBeer */ = {
+			isa = PBXGroup;
+			children = (
+				94A3E15919D5B91C00EA190F /* SmashingBeer-Bridging-Header.h */,
+				94874ADE19D5ADF800D866F9 /* AppDelegate.swift */,
+				94A3E15A19D5BC0600EA190F /* WebService */,
+				94A3E16019D5D54D00EA190F /* Alamofire */,
+				94A3E14719D5B07B00EA190F /* Views */,
+				94A3E15419D5B7DD00EA190F /* Models */,
+				94874AE519D5ADF800D866F9 /* Images.xcassets */,
+				94874AE719D5ADF800D866F9 /* LaunchScreen.xib */,
+				94874ADC19D5ADF800D866F9 /* Supporting Files */,
+			);
+			path = SmashingBeer;
+			sourceTree = "<group>";
+		};
+		94874ADC19D5ADF800D866F9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				94874ADD19D5ADF800D866F9 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		94874AF119D5ADF800D866F9 /* SmashingBeerTests */ = {
+			isa = PBXGroup;
+			children = (
+				94874AF419D5ADF800D866F9 /* SmashingBeerTests.swift */,
+				94874AF219D5ADF800D866F9 /* Supporting Files */,
+			);
+			path = SmashingBeerTests;
+			sourceTree = "<group>";
+		};
+		94874AF219D5ADF800D866F9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				94874AF319D5ADF800D866F9 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		94A3E14719D5B07B00EA190F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				94A3E14D19D5B2D400EA190F /* Login */,
+				94A3E14819D5B08900EA190F /* BeerList */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		94A3E14819D5B08900EA190F /* BeerList */ = {
+			isa = PBXGroup;
+			children = (
+				94A3E14519D5B04400EA190F /* BeerList.storyboard */,
+				94A3E15219D5B35B00EA190F /* SBBeerListTVC.swift */,
+			);
+			name = BeerList;
+			sourceTree = "<group>";
+		};
+		94A3E14D19D5B2D400EA190F /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				94A3E14E19D5B30B00EA190F /* SBLoginVC.swift */,
+				94A3E15019D5B32000EA190F /* Login.storyboard */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		94A3E15419D5B7DD00EA190F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				94A3E15519D5B82400EA190F /* SBBeer.swift */,
+				94A3E15719D5B83100EA190F /* SBUser.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		94A3E15A19D5BC0600EA190F /* WebService */ = {
+			isa = PBXGroup;
+			children = (
+				94A3E15E19D5BC5900EA190F /* SBWebService.swift */,
+			);
+			name = WebService;
+			sourceTree = "<group>";
+		};
+		94A3E16019D5D54D00EA190F /* Alamofire */ = {
+			isa = PBXGroup;
+			children = (
+				94A3E16219D5D86900EA190F /* Alamofire.swift */,
+			);
+			name = Alamofire;
+			sourceTree = "<group>";
+		};
+		DF1C4F5E068F460D84CBB7E8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FC3F35165037430BAEBBF054 /* libPods-SmashingBeer.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		94874AD819D5ADF800D866F9 /* SmashingBeer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 94874AF819D5ADF800D866F9 /* Build configuration list for PBXNativeTarget "SmashingBeer" */;
+			buildPhases = (
+				6D2395FF9F344321A8F6A200 /* Check Pods Manifest.lock */,
+				94874AD519D5ADF800D866F9 /* Sources */,
+				94874AD619D5ADF800D866F9 /* Frameworks */,
+				94874AD719D5ADF800D866F9 /* Resources */,
+				4D247080D11143B0896B29B8 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SmashingBeer;
+			productName = SmashingBeer;
+			productReference = 94874AD919D5ADF800D866F9 /* SmashingBeer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		94874AED19D5ADF800D866F9 /* SmashingBeerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 94874AFB19D5ADF800D866F9 /* Build configuration list for PBXNativeTarget "SmashingBeerTests" */;
+			buildPhases = (
+				94874AEA19D5ADF800D866F9 /* Sources */,
+				94874AEB19D5ADF800D866F9 /* Frameworks */,
+				94874AEC19D5ADF800D866F9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				94874AF019D5ADF800D866F9 /* PBXTargetDependency */,
+			);
+			name = SmashingBeerTests;
+			productName = SmashingBeerTests;
+			productReference = 94874AEE19D5ADF800D866F9 /* SmashingBeerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		94874AD119D5ADF800D866F9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = SmashingBoxes;
+				TargetAttributes = {
+					94874AD819D5ADF800D866F9 = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+					94874AED19D5ADF800D866F9 = {
+						CreatedOnToolsVersion = 6.0.1;
+						TestTargetID = 94874AD819D5ADF800D866F9;
+					};
+				};
+			};
+			buildConfigurationList = 94874AD419D5ADF800D866F9 /* Build configuration list for PBXProject "SmashingBeer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 94874AD019D5ADF800D866F9;
+			productRefGroup = 94874ADA19D5ADF800D866F9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				94874AD819D5ADF800D866F9 /* SmashingBeer */,
+				94874AED19D5ADF800D866F9 /* SmashingBeerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		94874AD719D5ADF800D866F9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94A3E15119D5B32000EA190F /* Login.storyboard in Resources */,
+				94874AE919D5ADF800D866F9 /* LaunchScreen.xib in Resources */,
+				94874AE619D5ADF800D866F9 /* Images.xcassets in Resources */,
+				94A3E14619D5B04400EA190F /* BeerList.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94874AEC19D5ADF800D866F9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4D247080D11143B0896B29B8 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-SmashingBeer-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6D2395FF9F344321A8F6A200 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		94874AD519D5ADF800D866F9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94A3E15319D5B35B00EA190F /* SBBeerListTVC.swift in Sources */,
+				94874ADF19D5ADF800D866F9 /* AppDelegate.swift in Sources */,
+				94A3E15619D5B82400EA190F /* SBBeer.swift in Sources */,
+				94A3E15F19D5BC5900EA190F /* SBWebService.swift in Sources */,
+				94A3E15819D5B83100EA190F /* SBUser.swift in Sources */,
+				94A3E14F19D5B30B00EA190F /* SBLoginVC.swift in Sources */,
+				94A3E16319D5D86900EA190F /* Alamofire.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94874AEA19D5ADF800D866F9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94874AF519D5ADF800D866F9 /* SmashingBeerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		94874AF019D5ADF800D866F9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 94874AD819D5ADF800D866F9 /* SmashingBeer */;
+			targetProxy = 94874AEF19D5ADF800D866F9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		94874AE719D5ADF800D866F9 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				94874AE819D5ADF800D866F9 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		94874AF619D5ADF800D866F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		94874AF719D5ADF800D866F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		94874AF919D5ADF800D866F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B78E2B219CDD4AFB8B9CD1EF /* Pods-SmashingBeer.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SmashingBeer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/philcole/Desktop/iOSProjects/SmashingBoxes/SmashingBeer/SmashingBeer/SmashingBeer-Bridging-Header.h";
+			};
+			name = Debug;
+		};
+		94874AFA19D5ADF800D866F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B78E2B219CDD4AFB8B9CD1EF /* Pods-SmashingBeer.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SmashingBeer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/philcole/Desktop/iOSProjects/SmashingBoxes/SmashingBeer/SmashingBeer/SmashingBeer-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		94874AFC19D5ADF800D866F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SmashingBeerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SmashingBeer.app/SmashingBeer";
+			};
+			name = Debug;
+		};
+		94874AFD19D5ADF800D866F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SmashingBeerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SmashingBeer.app/SmashingBeer";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		94874AD419D5ADF800D866F9 /* Build configuration list for PBXProject "SmashingBeer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94874AF619D5ADF800D866F9 /* Debug */,
+				94874AF719D5ADF800D866F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		94874AF819D5ADF800D866F9 /* Build configuration list for PBXNativeTarget "SmashingBeer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94874AF919D5ADF800D866F9 /* Debug */,
+				94874AFA19D5ADF800D866F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		94874AFB19D5ADF800D866F9 /* Build configuration list for PBXNativeTarget "SmashingBeerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94874AFC19D5ADF800D866F9 /* Debug */,
+				94874AFD19D5ADF800D866F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 94874AD119D5ADF800D866F9 /* Project object */;
+}
